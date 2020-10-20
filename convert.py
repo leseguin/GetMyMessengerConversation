@@ -4,15 +4,6 @@ import sys
 
 
 
-def tryLastM():
-    data = '"\u00e2\u009d\u00a4\u00e2\u009d\u00a4\u00e2\u009d\u00a4\u00f0\u009f\u0098\u0098"'
-    msg = json.loads(data).encode('latin1').decode('utf8')
-    return msg.encode('utf8')
-
-
-
-
-
 def getMessages():
     with open('message_1.json') as json_file:
         dataa = json.load(json_file)
